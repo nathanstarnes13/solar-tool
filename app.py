@@ -1,23 +1,8 @@
-Solar & Battery Design Tool
-============================
-Senior-grade Streamlit app for residential solar + battery system sizing.
-
-APIs used (all free at modest volume):
-  1. Census Bureau Geocoder   — address → lat/lon (no key needed)
-  2. Google Solar API         — roof geometry, usable area, tilt/azimuth (free tier via Google Cloud key)
-  3. NREL PVWatts v8          — solar irradiance + annual/monthly production (free key at developer.nrel.gov)
-  4. OpenEI URDB              — utility rate schedules (free key at openei.org/services/api)
-
-Deploy:
-  streamlit run app.py
-
-Embed on your website:
-  <iframe src="https://YOUR_APP.streamlit.app?embedded=true" width="100%" height="900" frameborder="0"></iframe>
-
-Required packages:
-  pip install streamlit requests fpdf2
 """
-
+Solar & Battery Design Tool - Honest Energy Consulting
+Run: streamlit run app.py
+Install: pip install streamlit requests fpdf2 pandas
+"""
 import streamlit as st
 import requests
 import math
